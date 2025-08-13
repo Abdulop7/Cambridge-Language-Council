@@ -32,7 +32,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-[#1E3A8A]">Contact</h3>
             <ul className="mt-4 space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <MapPin size={18} className="text-[#B91C1C]" />
+                <MapPin size={40} className="text-[#B91C1C]" />
                 Cambridge Language Council, Office no 3, first floor, Tehsil Chowk, 06 Bosan Rd, Gulgasht Colony, Multan, Punjab 60000
               </li>
               <li className="flex items-center gap-2">

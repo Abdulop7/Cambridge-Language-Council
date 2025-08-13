@@ -43,7 +43,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -50, opacity: 0 }}
       transition={{ duration: 0 }}
-      className="hidden lg:flex bg-gray-800 text-white text-sm py-2 px-6 items-center justify-between"
+      className="duration-300 transition-all hidden lg:flex bg-gray-800 text-white text-sm py-2 px-6 items-center justify-between"
     >
       {/* Left Section */}
       <div className="flex justify-center items-center gap-6 w-full xl:text-lg text-sm">
@@ -52,18 +52,8 @@ export default function Navbar() {
           <span>Mon - Fri: 8AM to 8PM</span>
         </div>
         <div className="flex items-center gap-2">
-          <Contact size={20} />
-          <span>Contact Us</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <FileText size={20} />
-          <span>Apply Now</span>
-        </div>
-        
-        <div className="flex items-center gap-2">
           <Phone size={20} />
-          <span>1-866-748-9780</span>
+          <span>+92 331-7078351</span>
         </div>
         <div className="flex items-center gap-2">
           <Mail size={20} />
@@ -75,14 +65,14 @@ export default function Navbar() {
 </AnimatePresence>
 
     <nav
-      className={`fixed md:p-6  p-4 w-full z-50 transition-all ${
+      className={`fixed md:p-6  p-4 w-full z-50 duration-500 transition-all ${
         scrolled ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link className="aspect-square h-full relative hover:scale-120 transition duration-300" href="/">
-          <Image src={logo} fill alt="Logo" />
+          <Image className={`${scrolled ? "" : "brightness-0 invert"}`} src={logo} fill alt="Logo" />
         </Link>
 
         {/* Desktop Menu */}
