@@ -5,7 +5,7 @@ import banner from "../public/hero-bg.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+    <section className="relative h-screen w-screen flex items-center justify-center text-white ">
       {/* Optimized Background */}
       <Image
         src={banner}

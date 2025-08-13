@@ -11,7 +11,7 @@ import CallToAction from "../../components/callToAction";
 
 export default function Home() {
   return (
-    <div className="font-sans w-[100vw] overflow-x-hidden">
+    <div className="font-sans w-screen overflow-x-hidden">
 
       <Hero />
       <AboutSection />
